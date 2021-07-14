@@ -5,7 +5,7 @@
 # Import required libs for your plugin
 import argparse
 import requests
-# from urllib.parse import quote
+from urllib.parse import quote
 from requests.auth import HTTPBasicAuth
 
 # Return codes expected by Nagios
