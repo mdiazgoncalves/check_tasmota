@@ -1,16 +1,4 @@
 # check_tasmota
-Nagios plugin to check availability of Tasmota devices
-
-
-To install Requests, simply run this simple command in your terminal of choice:
-
-python -m pip install requests
-
-
-
-
-
-# check_tasmota
 
 
 Nagios plugin to check availability of [Tasmota](https://tasmota.github.io/docs/) devices. Checks if the ESPHome device is online
@@ -30,10 +18,10 @@ chmod +x check_tasmota.py
 
 The [requests](https://github.com/psf/requests) module is required.
 
-It can be installed using:
+To install Requests, simply run this simple command in your terminal of choice:
 
 ```
-pip3 install requests
+python -m pip install requests
 ```
 
 ## Parameters
