@@ -45,7 +45,7 @@ optional arguments:
 
 ## Support
 
-Feel free to submit any issues and PR's'.
+Feel free to submit any issues and PRs.
 
 ## License
 
