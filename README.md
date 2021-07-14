@@ -1,7 +1,7 @@
 # check_tasmota
 
 
-Nagios plugin to check availability of [Tasmota](https://tasmota.github.io/docs/) devices. Checks if the ESPHome device is online
+Nagios plugin to check availability of [Tasmota](https://tasmota.github.io/docs/) devices. Checks if the Tasmota device is online
 
 ## Installation
 
