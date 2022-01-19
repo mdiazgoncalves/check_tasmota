@@ -32,7 +32,7 @@ except requests.exceptions.RequestException  as e:
 else:
     data = response.json()
     STATUS = 0
-    MESSAGE = "name:{} mac_address:{} version:{}".format(data['Status']['DeviceName'],data['StatusNET']['Mac'],data['StatusFWR']['Version'])
+    MESSAGE = f"name:{data['Status']['DeviceName']} mac_address:{data['StatusNET']['Mac']} version:{data['StatusFWR']['Version']}"
 
 # Print the message for nagios
 print(f"{codes[STATUS]} - {MESSAGE}")
