@@ -1,3 +1,7 @@
+[![Pylint](https://github.com/mdiazgoncalves/check_tasmota/actions/workflows/pylint.yml/badge.svg)](https://github.com/mdiazgoncalves/check_tasmota/actions/workflows/pylint.yml)
+
+[![Remark lint](https://github.com/mdiazgoncalves/check_tasmota/actions/workflows/remarklint.yml/badge.svg)](https://github.com/mdiazgoncalves/check_tasmota/actions/workflows/remarklint.yml)
+
 # check_tasmota
 
 
