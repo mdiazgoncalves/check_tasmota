@@ -8,7 +8,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 # Return codes expected by Nagios
-codes = [ 'OK', 'WARNING', 'CRITICAL', 'UNKNOWN' ]
+codes = ['OK', 'WARNING', 'CRITICAL', 'UNKNOWN']
 
 # Create the parser
 my_parser = argparse.ArgumentParser(description='Check Tasmota node availability')
@@ -27,15 +27,15 @@ try:
     response = requests.get('http://' + args.hostname + '/cm?cmnd=Status%200', auth=HTTPBasicAuth(args.username, args.password))
     response.raise_for_status()
 except requests.exceptions.RequestException  as e:
-    status = 2
-    message =str(e)
+    STATUS = 2
+    MESSAGE =str(e)
 else:
     data = response.json()
-    status = 0
-    message = "name:{} mac_address:{} version:{}".format(data['Status']['DeviceName'],data['StatusNET']['Mac'],data['StatusFWR']['Version'])
+    STATUS = 0
+    MESSAGE = "name:{} mac_address:{} version:{}".format(data['Status']['DeviceName'],data['StatusNET']['Mac'],data['StatusFWR']['Version'])
 
 # Print the message for nagios
-print("{} - {}".format(codes[status], message))
+print(f"{codes[STATUS]} - {MESSAGE}")
 
 # Exit with status code
-raise SystemExit(status)
+raise SystemExit(STATUS)
